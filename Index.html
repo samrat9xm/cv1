@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,263 +22,268 @@
 
 		.container{
 			margin: auto;
-			max-width: 1000px;
+			max-width: 780px;
 			background: #ddd;
 			display: grid;
+
 			grid-template-areas: 
+
 			'd1 d1 d1 d1 d1'
-			'd1 d1 d1 d1 d1'
-			'd2 d2 d2 d3 d3'
-			'd2 d2 d2 d3 d3'
-			'd2 d2 d2 d3 d3'
-			'd2 d2 d2 d3 d3'
-		}
+			'd2 d2 d2 d2 d3'}
 
-		.div1,.div2,.div3{
-			border:1px solid black;
-		}
+			.div1,.div2,.div3{
+				border:1px solid black;
+			}
 
-		.div1{grid-area: d1;
-			overflow: hidden;
-			position: relative;
-			background: #022135;}
-			.div2{grid-area: d2;
-				background: #DDE9F1;}
-				.div3{grid-area: d3;
-					background: #DE0F3F;
-				}
-
-				.design-parent{
-					width:60px;
-					max-height: 335px;
-					overflow: hidden;
-					position: absolute;
-					left: -24px;
-				}
-
-				.design-child{
-					margin-top: -59px;
-					overflow: hidden;
-					background: #FFFFFF;
-				}
-
-				.div1 .design-parent .design-child .stick{
-					height: 5px;
-					width: 100px;
-					background:#022135;
-					transform: rotate(-45deg);
-					margin: 10px 0;
-
-				}
-
-				.photo img{
-					width: 250px;
-					height: 250px;
-					border-radius: 50%;
-					border:2px solid white;
-				}
-
-				.photo{
-					float: right;
-					text-align: center;
-					width: 40%;
-					padding: 40px 0;
-				}
-
-				.heading{
-					float: left;
-					width: 57%;
-					padding-left: 50px;
-					padding-right: 30px;
-				}
-
-				.heading h1{
-					margin: 40px 0;
-					color: #EFF0F2;
-				}
-
-				.heading h4{
-					letter-spacing: 6px;
-					color: #7BB7E0;
-				}
-
-				.heading h3{
-					margin-top: 30px;
-					margin-bottom: 15px;
-					letter-spacing: 2px;
-					color: #EFF0F2;
-				}
-
-				.heading p{
-					color: #EFF0F2;
-					margin-bottom: 30px;
-				}
-
-				.div2 .flex{padding-left: 80px;
-					padding-top: 40px;
-					padding-right: 30px;}
-
-					.div2 .flex h3{color: #022135;letter-spacing: 3px;}
-
-					.div2 .flex h4,.div2 .flex h5{color: #DE0F3F}
-
-					.div3 {color: #DDE9F1;}
-
-					.div3 .flex1{padding: 40px 20px 20px 35px;
+			.div1{grid-area: d1;
+				overflow: hidden;
+				position: relative;
+				background: #022135;
+				width: 100%;}
+				.div2{grid-area: d2;
+					background: #DDE9F1;}
+					.div3{grid-area: d3;
+						background: #DE0F3F;
 					}
 
-					@media screen and (max-width: 950px){
-						.container{min-width: 500px;}
-						.heading,.photo{width:100%; text-align: center;}
-						.design-parent{max-height: 630px;}
-						.heading p{
-							padding: 0 50px;
+					.design-parent{
+						width:60px;
+						max-height: 700px;
+						overflow: hidden;
+						position: absolute;
+						left: -24px;
+					}
+
+					.design-child{
+						margin-top: -59px;
+						overflow: hidden;
+						background: #FFFFFF;
+					}
+
+					.div1 .design-parent .design-child .stick{
+						height: 5px;
+						width: 100px;
+						background:#022135;
+						transform: rotate(-45deg);
+						margin: 10px 0;
+
+					}
+
+					.photo img{
+						width: 250px;
+						height: 250px;
+						border-radius: 50%;
+						border:2px solid white;
+					}
+
+					.photo{
+						float: right;
+						text-align: center;
+						width: 40%;
+						padding: 40px 0;
+					}
+
+					.heading{
+						float: left;
+						width: 57%;
+						padding-left: 50px;
+						padding-right: 30px;
+					}
+
+					.heading h1{
+						margin: 40px 0;
+						color: #EFF0F2;
+					}
+
+					.heading h4{
+						letter-spacing: 6px;
+						color: #7BB7E0;
+					}
+
+					.heading h3{
+						margin-top: 30px;
+						margin-bottom: 15px;
+						letter-spacing: 2px;
+						color: #EFF0F2;
+					}
+
+					.heading p{
+						color: #EFF0F2;
+						margin-bottom: 30px;
+					}
+
+					.div2 .flex{margin-left: 30px;
+						margin-top: 40px;
+						margin-right: 60px;}
+
+						.div2 .flex h3{color: #022135;letter-spacing: 3px;}
+
+						.div2 .flex h4,.div2 .flex h5{color: #DE0F3F}
+
+						.div3 {color: #DDE9F1;}
+
+						.div3 .flex1{margin: 40px 10px 0px 15px;
 						}
 
+						@media screen and (max-width: 950px){
+							.container{
+								grid-template-areas: 
+								'd1 d1 d1 d1 d1'
+								'd2 d2 d2 d2 d2'
+								'd3 d3 d3 d3 d3'}
+								.heading,.photo{width:100%; text-align: center;}
+								.heading p{
+									padding: 0 50px;
+								}
 
-					}
-				</style>
-			</head>
-			<body>
 
-				<div class="container">
-					<div class="div1">
-						<div class="design-parent">
-							<div class="design-child">
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
-								<div class="stick"></div>
+
+
+							}
+						</style>
+					</head>
+					<body>
+
+						<div class="container">
+							<div class="div1">
+								<div class="design-parent">
+									<div class="design-child">
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+										<div class="stick"></div>
+									</div>
+								</div>
+								<div class="photo">
+									<img src="kim.jpg" alt="photo">
+								</div>
+								<div class="heading">
+									<h1>ABDULLAH AL NOMAN</h1>
+									<h4>WEB DEVELOPER</h4>
+									<h3>Career Summary</h3>
+									<p>	I am a robotics engineer who's knowledgeable in both computer science and electrical engineering. I have worked in both academic and corporate settings.</p>
+								</div>
+
+							</div>
+							<div class="div2">
+								<div class="flex">
+									<h3>Work Experience</h3><br/>
+									<h4>Head Robotics Engineer</h4><br/>
+									<h5>Gritters and Company | Dec 2015 - present</h5><br/>
+									<p>- Designs and integrates robots that combine seamlessly with client processes
+									- Works closely with other engineers, developers, and managers</p>
+								</div>
+								<div class="flex">
+									<h3>Work Experience</h3><br/>
+									<h4>Head Robotics Engineer</h4><br/>
+									<h5>Gritters and Company | Dec 2015 - present</h5><br/>
+									<p>- Designs and integrates robots that combine seamlessly with client processes
+									- Works closely with other engineers, developers, and managers</p>
+								</div>
+								<div class="flex">
+									<h3>Work Experience</h3><br/>
+									<h4>Head Robotics Engineer</h4><br/>
+									<h5>Gritters and Company | Dec 2015 - present</h5><br/>
+									<p>- Designs and integrates robots that combine seamlessly with client processes
+									- Works closely with other engineers, developers, and managers</p>
+								</div>
+								<div class="flex">
+									<h3>Work Experience</h3><br/>
+									<h4>Head Robotics Engineer</h4><br/>
+									<h5>Gritters and Company | Dec 2015 - present</h5><br/>
+									<p>- Designs and integrates robots that combine seamlessly with client processes
+									- Works closely with other engineers, developers, and managers</p>
+								</div>
+								<br>
+							</div>
+							<div class="div3">
+								<div class="flex1">
+									<h3>Professional Skills</h3>
+									<br/>
+									<p> - Installation and Debugging <br>
+										- Technology Design <br/>
+										- Systems Analysis and Evaluation <br/>
+										- Machine Learning <br/>
+										- Artificial Intelligence <br/>
+									- Computer Programming</p>
+								</div>
+								<br>
+								<div class="flex1">
+									<h3>Character References</h3>
+									<br/>
+									<p>Eun Ae MunData Scientist, EstateByteEmail: hello@reallygreatsite.com
+										Rosuel Rodrigues
+										Project Manager, Dekalogic Financial
+									Email: hello@reallygreatsite.com</p>
+								</div>
+								<br>
+								<div class="flex1">
+									<h3>Character References</h3>
+									<br/>
+									<p>Eun Ae MunData Scientist, EstateByteEmail: hello@reallygreatsite.com
+										Rosuel Rodrigues
+										Project Manager, Dekalogic Financial
+									Email: hello@reallygreatsite.com</p>
+								</div>
+								<br>
+								<br>
+
 							</div>
 						</div>
-						<div class="photo">
-							<img src="kim.jpg" alt="photo">
-						</div>
-						<div class="heading">
-							<h1>ABDULLAH AL NOMAN</h1>
-							<h4>WEB DEVELOPER</h4>
-							<h3>Career Summary</h3>
-							<p>	I am a robotics engineer who's knowledgeable in both computer science and electrical engineering. I have worked in both academic and corporate settings.</p>
-						</div>
 
-					</div>
-					<div class="div2">
-						<div class="flex">
-							<h3>Work Experience</h3><br/>
-							<h4>Head Robotics Engineer</h4><br/>
-							<h5>Gritters and Company | Dec 2015 - present</h5><br/>
-							<p>- Designs and integrates robots that combine seamlessly with client processes
-							- Works closely with other engineers, developers, and managers</p>
-						</div>
-						<div class="flex">
-							<h3>Work Experience</h3><br/>
-							<h4>Head Robotics Engineer</h4><br/>
-							<h5>Gritters and Company | Dec 2015 - present</h5><br/>
-							<p>- Designs and integrates robots that combine seamlessly with client processes
-							- Works closely with other engineers, developers, and managers</p>
-						</div>
-						<div class="flex">
-							<h3>Work Experience</h3><br/>
-							<h4>Head Robotics Engineer</h4><br/>
-							<h5>Gritters and Company | Dec 2015 - present</h5><br/>
-							<p>- Designs and integrates robots that combine seamlessly with client processes
-							- Works closely with other engineers, developers, and managers</p>
-						</div>
-						<div class="flex">
-							<h3>Work Experience</h3><br/>
-							<h4>Head Robotics Engineer</h4><br/>
-							<h5>Gritters and Company | Dec 2015 - present</h5><br/>
-							<p>- Designs and integrates robots that combine seamlessly with client processes
-							- Works closely with other engineers, developers, and managers</p>
-						</div>
-						<br>
-						<br>
-					</div>
-					<div class="div3">
-						<div class="flex1">
-							<h3>Professional Skills</h3>
-							<br/>
-							<p> - Installation and Debugging <br>
-								- Technology Design <br/>
-								- Systems Analysis and Evaluation <br/>
-								- Machine Learning <br/>
-								- Artificial Intelligence <br/>
-							- Computer Programming</p>
-						</div>
-						<br>
-						<br>
-						<br>
-						<div class="flex1">
-							<h3>Character References</h3>
-							<br/>
-							<p>Eun Ae MunData Scientist, EstateByteEmail: hello@reallygreatsite.com
-								Rosuel Rodrigues
-								Project Manager, Dekalogic Financial
-							Email: hello@reallygreatsite.com</p>
-						</div>
-						<br>
-						<br>
-						<br>
-						<div class="flex1">
-							<h3>Character References</h3>
-							<br/>
-							<p>Eun Ae MunData Scientist, EstateByteEmail: hello@reallygreatsite.com
-								Rosuel Rodrigues
-								Project Manager, Dekalogic Financial
-							Email: hello@reallygreatsite.com</p>
-						</div>
-						<br>
-						<br>
-
-					</div>
-					<br>
-					<br>
-
-				</div>
-
-			</body>
-			</html>
+					</body>
+					</html>
